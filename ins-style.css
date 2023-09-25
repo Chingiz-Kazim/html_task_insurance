@@ -1,0 +1,355 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    background-color: #1b1b1b;
+}
+header{
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+}
+
+header >div{
+    width: 100%;
+}
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(15, 90, 100);
+    transition: all .3s linear;
+}
+
+img{
+    width: 100%;
+}
+
+select:focus{
+    outline: none;
+}
+p,h2{
+ margin: 0;
+}
+
+
+
+.dot{
+    border: solid 2px black;
+    border-radius: 50%;
+    width: 3px;
+}
+.d-flex{
+    display: flex;
+}
+
+.justify-between{
+    justify-content: space-between;
+   
+}
+.justify-start{
+    justify-content: start;
+}
+.justify-center{
+    justify-content:center;
+   
+}
+
+.mt-5{
+    margin-top: 5%;
+}
+.mt-10{
+    margin-top: 10%;
+}
+.w-100{
+    width: 100%;
+}
+.btn{
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+    border-radius: 25px;
+    transition: all 0.3s linear;
+}
+
+
+.container{
+    padding-left: 10%;
+    padding-right: 10%;
+    /*  */
+}
+
+
+.lang{
+    background-color: #6efaaa;
+    font-weight: bold !important;
+    color: black;
+    font-size: 12px;
+}
+
+.first{
+    width: 100%;
+    padding: 10px 0;
+}
+.second{
+    width: 100%;
+    background-color: white;
+    align-items: center;
+    border: none;
+    border-radius: 3px;
+}
+.second div{
+    padding-left: 25px;
+}
+.second nav{
+    align-items: center;
+}
+
+.second li a{
+    margin-right: 20px;
+    color: rgba(0, 0, 0, 0.772);
+}
+/* .second button {
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+    border-radius: 25px;
+} */
+.contact a{
+   margin-right: 20px;
+   color: white;
+}
+.cont-rght a{
+    margin-right: 20px;
+    color: black;
+}
+.cont-rght select{
+    color: black;
+    font-size: 12px;
+    border: none;
+    background: none;
+}
+select:focus option{
+    border: none;
+    outline: none;
+}
+
+nav ul{
+    color: black;
+}
+.main{
+    height: 100vh;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-image: url(./bnnr-img@2x.jpg);
+    background-size: cover;
+    align-items: center;
+}
+.main-dscp{
+    width: 50%;
+}
+.main-dscp h1{
+    font-size: 4rem;
+    color: white;
+    font-family: math;
+}
+.main-dscp p{
+    color: darkgray;
+    width: 60%;
+    margin-bottom: 35px;
+}
+
+.main-dscp span{
+    margin-left: 40px;
+    line-height: 35px;
+    font-family: math;
+    color: white;
+}
+
+.packages, .package{
+    background-color: white;
+    flex-direction: column;
+}
+.support, .sup-img{
+    align-items: center;
+}
+.support a{
+    color: black;
+}
+.support i{
+    position: absolute;
+}
+
+.akk-img{
+    width: 10%;
+}
+
+.ins-pack{
+    color: rgb(15, 90, 100);
+    width: 81%;
+    font-size: 30px;
+    padding-right: 26px;
+}
+.desc-process{
+    width: 85%;
+    font-size: 23px;
+}
+.desc-process, .ins-pack{
+    font-family: math;
+}
+.card-select{
+    margin-top: 30px;
+}
+
+.card-select a{
+    margin-right: 10px;
+}
+
+.cards{
+        align-items: center;
+        justify-content: space-around;
+        width: 100vw;
+        height: 100vh;
+}
+.card{
+    text-align: start;
+        background: rgb(247, 246, 246);
+        width: 27%;
+        position: relative;
+        color: rgb(15, 90, 100);
+        
+}
+
+.card-in{
+    height: 33%;
+    margin-bottom: 15px;
+    padding: 7%;
+}
+
+.card a{
+    display: inline-block;
+    width: 100%;
+    font-size: 1.2rem;
+    border-top: 1px solid black;
+    color: rgb(15, 90, 100);
+}
+
+.card h4{
+    font-size: 1.5rem;
+    padding: 5% 0;
+}
+
+.badge{
+    font-size: 16px !important;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: white;
+    display: inline-block;
+    padding: 2px 4px;
+    border-radius: 25px;
+}
+
+.card span{
+    font-size: 5rem;
+}
+
+.card > a{
+    padding: 7%;
+}
+
+.card:hover{
+    background-color: white;
+    box-shadow:rgb(227, 227, 227) 1px 1px 10px 1px;
+}
+
+
+.wordpressbtn{
+    display: flex;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: 40px;
+    left: 40px;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: rgb(227, 227, 227);
+    justify-content: center;
+    align-items: center;
+}
+
+.wordpressbtn a i{
+    font-size: 2rem;
+}
+
+.cookiesbtn{
+    display: flex;
+    width: 550px;
+    height: 55px;
+    position: fixed;
+    bottom: 40px;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%,-50%);
+    padding: 5px;
+    border-radius: 25px;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 17px;
+    box-shadow:rgb(227, 227, 227) 1px 1px 10px 1px;
+}
+
+.phonebtn{
+    display: flex;
+    width: 172px;
+    height: 50px;
+    position: fixed;
+    bottom: 130px;
+    right: 40px;
+    padding: 15px;
+    border-radius: 25px;
+    background-color: white;
+    transition: all 0.3s linear;
+}
+
+.phonebtn a{
+    display: flex;
+    align-items: center;
+}
+.phonebtn a span{
+    margin-left: 10px;
+}
+
+
+.mybtn:hover{
+    background-color: rgb(15, 90, 100);
+    transition: all 0.3s linear;
+}
+
+.mybtn:hover a, .mybtn:hover a i{
+    color: white !important;
+}
+
+

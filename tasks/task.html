@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+</style>
+<body>
+
+
+
+
+    <script>
+//=====================================================================================================
+        ////==
+        var x = 251;
+        var first = 0;
+        var last = 0;
+        var midle = 0;
+        var strX = String(x);
+
+        var count = x.toString().length - 1
+        var n = 10**count;
+        console.log(x);
+
+        
+        last = x%10;
+        console.log(`last -> ${last}`);
+        first = (x - x%n)/n;
+        console.log(`first -> ${first}`);
+
+        function getMiddle(strX) {
+            return strX.substr((Math.ceil(strX.length / 2) - 1), (2 - strX.length % 2));
+        }
+        midle = Number(getMiddle(strX));
+        console.log(`middle -> ${midle}`);
+
+
+        var toplam = first+last+midle;
+        console.log(`toplam = ${toplam}`);
+        var orta = toplam/3;
+        console.log(`orta = ${orta}`);
+//=====================================================================================================
+
+        var text = "el bilirki sen menimsen";
+        var middle = Math.round(text.length/2);
+        var newText = '';
+        var newText1 = '';
+        console.log(text.length);
+        console.log(middle);
+
+        //-------------------------------tersine cumle
+
+        // newText = text.split('').reverse().join('');
+        // console.log(newText);
+
+        //--------------------------- ortadan axira kimi
+
+        for (let i = 0; i < middle; i++) {
+            newText+=text[i];
+        }
+        console.log(newText);
+
+        //---------------------------------ortadan evvele
+
+        for (let index = middle-1; index >= 0; index--) {
+            newText1+=text[index];
+        }
+        console.log(newText1);
+        
+
+
+//=====================================================================================================
+        //task palindrom
+        var word1 = "civic";
+        var word2 = "radar";
+        var word3 = "level";
+        var word4 = "color";
+        function palindrom(str) {
+            return str.split('').reverse().join('') == str;
+        }
+        console.log(palindrom(word4));
+
+        // for (let index = 0; index < word1.length; index++) {
+        //     console.log(word1[index]);
+        // }
+        
+
+    </script>
+</body>
+</html>
